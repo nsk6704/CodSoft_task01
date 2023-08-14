@@ -1,0 +1,418 @@
+/* Reset styles */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navbar styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(1, 1, 1, 0.8);
+  z-index: 100;
+  transition: background-color 0.3s;
+  transition-duration: 1s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo .heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+  transition: 0.2s ease-in;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+nav ul li:hover {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #333;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 1s;
+    
+}
+
+
+
+nav .sideMenuButton {
+  display: none;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Side navigation bar for responsive website */
+.sideNavigationBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.8);
+  overflow-x: hidden;
+  transition: 0.3s ease-in;
+  z-index: 99;
+  padding-top: 60px;
+}
+
+.sideNavigationBar a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+}
+
+.sideNavigationBar a:hover {
+  background-color: #00c7ff;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Content styles */
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 5%;
+}
+
+.line .side1 {
+  max-width: 50%;
+  padding-right: 50px;
+}
+
+.side1 h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #00f7ff;
+}
+
+.side1 p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #00f7ff;
+}
+
+.side1 button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #00f7ff;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.side1 button:hover {
+  background-color: #00c7ff;
+}
+
+.side2 img {
+  width: 100%;
+}
+
+/* About section styles */
+.link {
+  background: linear-gradient(to bottom, #0b0b0b, #000);
+  padding: 100px 0;
+}
+
+.link .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.link .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00f7ff;
+  margin-bottom: 20px;
+}
+
+.link p {
+  font-size: 18px;
+  color: #00f7ff;
+  line-height: 1.8;
+}
+
+/* Contact section styles */
+.contact {
+  background: linear-gradient(to bottom, #000, #0b0b0b);
+  padding: 100px 0;
+}
+
+.contact .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00f7ff;
+  margin-bottom: 20px;
+}
+
+.contactMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.contactMenu .input1 {
+  flex: 0 0 48%;
+}
+
+.input2 input,
+.input2 textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #1d1d1d;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.label1 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #00f7ff;
+}
+
+.button button,
+.navButton {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #00f7ff;
+  border: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button button:hover,
+.navButton:hover {
+  background-color: #00c7ff;
+}
+
+.rightside1 {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #00f7ff;
+}
+
+.content1 {
+  font-size: 16px;
+  color: #00f7ff;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+
+  body{
+    margin: 40px;
+  }
+  .line {
+    flex-direction: column;
+  }
+
+  .line .side1 {
+    padding: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .side2 img {
+    width: 80%;
+  }
+
+  .navButton {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .sideNavigationBar {
+    padding-top: 100px;
+  }
+
+  .sideNavigationBar.open {
+    width: 50%;
+  }
+
+  .closeButton {
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  nav .sideMenuButton {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+   
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
+.navbar-shrink {
+  background-color: rgba(1, 1, 1, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.shrink .logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.shrink .logo .heading {
+  font-size: 20px;
+}
+
+.shrink nav ul li a {
+  font-size: 16px;
+}
+/* Other media queries and CSS code specific to your project can be added here */
+
+
+.sideNavigationBar {
+  /* Your previous styles */
+  transition: 0.3s ease-in-out;
+  z-index: 1000; /* Ensure the side navbar appears above other elements */
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent background with dark overlay */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  padding-top: 80px;
+}
+
+.sideNavigationBar.open {
+  width: 50%;
+}
+
+.sideNavigationBar a {
+  /* Your previous styles ... */
+  display: block;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+}
+
+.list2{
+  font-size: 18px;
+  font-weight: normal;
+}
+.list1{
+  font-size: 12px;
+}
+

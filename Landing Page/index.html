@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TheCollegeAdvisor</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./_43ebea31-b98f-4f49-9613-c12a1354918f.jpg" alt="Logo">
+      <div class="heading">TheCollegeAdvisor</div>
+    </div>
+    <div class="heading">TheCollegeAdvisor</div>
+    <span class="sideMenuButton" onclick="openNavbar()">&#9776;</span>
+    <div class="navbar">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Our Services</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side navigation bar for responsive website -->
+  <div class="sideNavigationBar" id="sideNavigationBar">
+    <button class="sty">
+      
+        <a href="#" class="closeButton" onclick="closeNavbar()">&times;</a>
+        <a href="#Home" style="background-color: black;color: antiquewhite;" >Home</a>
+        <a href="#About" style="background-color: black;color: antiquewhite;">About</a>
+        <a href="#Services" style="background-color: black;color: antiquewhite;">Our Services</a>
+        <a href="#Contact" style="background-color: black;color: antiquewhite;">Contact</a>
+      
+    </button>
+  </div>
+
+  <!-- Content -->
+  <div class="line" id="Home">
+    <div class="side1">
+      <h1>The College Advisor</h1>
+      <p>Your Guide to a Successful Future</p>
+      <button>
+        <a href="#About">Learn More</a>
+      </button>
+    </div>
+    <div class="side2">
+      <!-- Replace with your image -->
+      <img src="./_a7c65fdf-f483-4343-97eb-c9c2ac197764.jpg" alt="Image" style="text-align: center; margin-left: 40px;" >
+    </div>
+  </div>
+
+  <section class="link" >
+    <div class="content">
+      <div class="title" id="About">About Us</div>
+      <p>
+        Welcome to The College Advisor, your one-stop destination for all your college and career
+        needs. Whether you are a high school student planning for higher education or a professional
+        looking to enhance your skills, we are here to guide you through every step of your journey.
+        Our team of experts is dedicated to providing you with personalized advice and resources to help
+        you make informed decisions for a successful future.
+      </p>
+    </div>
+    <br><br><br><br>
+
+    <div class="content">
+      <div class="title" id="Services">
+        <p>
+          <section id="services">
+            <h2 class="title">Our Services</h2>
+            <p id="list1">At College Counseling Help, we offer a wide range of services to ensure that students have the best possible college application experience. Our team of expert college counselors is committed to providing personalized support to each student. Here are some of the services we offer:</p><br><br>
+        
+            <ul class="list2">
+              <li>College Search and Selection: We assist students in finding colleges and universities that align with their interests, academic goals, and values.</li><br>
+              <li>Application Guidance: We guide students through the college application process, helping them prepare all necessary documents and meet deadlines.</li><br>
+              <li>Essay Coaching: Our counselors provide valuable feedback and coaching to help students craft compelling and authentic college essays.</li><br>
+              <li>Standardized Test Prep: We offer resources and strategies to help students prepare for standardized tests like the SAT and ACT.</li><br>
+              <li>Financial Aid Assistance: We provide information and guidance on financial aid options, scholarships, and grants to make college more affordable.</li><br>
+              <li>Interview Preparation: We help students prepare for college interviews, ensuring they feel confident and ready to make a strong impression.</li><br>
+              <li>Transfer Counseling: For transfer students, we offer support in navigating the transfer process and finding the right fit.</li><br>
+            </ul>
+            <br><br>
+        
+            <p>At College Counseling Help, we understand that each student's journey is unique. That's why our services are tailored to meet individual needs and goals. Our goal is to empower students to make informed decisions and find the best-fit colleges for their future success.</p>
+          </section>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="Contact">
+    <div class="content">
+      <div class="title">Contact Us</div>
+      <div class="contactMenu" style="left: 0px;">
+        <div class="input1">
+          <div class="label1">Your Name</div>
+          <div class="input2">
+            <input type="text" placeholder="Enter your Name here">
+          </div>
+          <div class="label1">
+            <label>Your Email</label>
+          </div>
+          <div class="input2">
+            <input type="text" placeholder="Enter your Email here">
+          </div>
+          <div class="label1">
+            <label>Your Message</label>
+          </div>
+          <div class="input2">
+            <textarea placeholder="Type your message here"></textarea>
+          </div>
+          <div class="button">
+            <button>Contact Us</button>
+          </div>
+        </div>
+        <div class="input3">
+          <div class="rightside1">
+            <div class="title1">Address</div>
+            <div class="content1">
+              123 Main Street, City, Country
+            </div>
+            <div class="title1">Phone</div>
+            <div class="content1">+1 (123) 456-7890</div>
+            <div class="title1">Email</div>
+            <div class="content1">info@thecollegeadvisor.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="footer">
+      <span>© 2023 The College Advisor. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
